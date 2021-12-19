@@ -101,7 +101,7 @@ node ('windows-with-vs') {
 
 In the traditional CI definition, not much could be changed in a PR.  Changes to the CI definition did not take effect until after commit.  There are ways to compile the definition (@dontet-bot test ci please), then manually enable and run new/modified jobs, but they are clunky.
 
-Pipelines improve upon this substantially.  Becuase the pipeline script, where most of the workflow logic is defined, is read from source control, a pull request will pick up any changes to the script.  Unfortunately, the pipeline declaration is still run and created on commit, so the following changes will not show up in your PR, though they can still be verified with '@dotnet-bot test ci please'
+Pipelines improve upon this substantially.  Because the pipeline script, where most of the workflow logic is defined, is read from source control, a pull request will pick up any changes to the script.  Unfortunately, the pipeline declaration is still run and created on commit, so the following changes will not show up in your PR, though they can still be verified with '@dotnet-bot test ci please'
 
 * Changing file names of pipelines
 * Adding/removing pipelines
